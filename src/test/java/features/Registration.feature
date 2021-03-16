@@ -1,3 +1,4 @@
+
 Feature: Validate Registration Functionality
 
   Background: To Validate  Registration Functionality
@@ -9,6 +10,11 @@ Feature: Validate Registration Functionality
     Then User Should  Be on Dashboard
 
     Examples: 
-      | Email                        | Password         |
-      | qwerty123455556@asd.com      | Qwerty@124!??12e |
-      | jkAbcdef112212223456@abc.com | Qwerty@124!??12e |
+      | Email             | Password         |
+      | prasaddixit3@asd.com | Qwerty@124!??12e |
+      | dixitprasad456@abc.com  | Qwerty@124!??12e |
+
+  Scenario: To validate Registration functionality with registerd Email-Id
+    When User Enter  Email and Password
+    And User Click On Registration
+    Then User Should  Get Registration error

@@ -1,3 +1,4 @@
+@Test
 Feature: Validate Login Functionality
 
   Background: Validate Login Functionality with Credential
@@ -9,10 +10,9 @@ Feature: Validate Login Functionality
     Then User Should Navigate to next Page
 
     Examples: 
-      | Username           | Password         |
-      | qwerty@asd.com     | Qwerty@124!??12e |
-      | xyz123456@abc.com  | Qwerty@124!??12e |
-      | qwerty1234@asd.com | Qwerty@124!??12e |
+      | Username       | Password         |
+      | qwerty@asd.com | Qwerty@124!??12e |
+      | prasaddixit3@asd.com | Qwerty@124!??12e |
 
   Scenario Outline: To validate Login With Incorrect Credential
     When User Login With invalid  "<Username>" and "<Password>"
@@ -24,3 +24,9 @@ Feature: Validate Login Functionality
       | qwerty@asd.com  | Qwerty@124!??12eff |
       |                 | Qwerty@124!??12e   |
       |                 |                    |
+
+  Scenario: Validate Login Functionality By Pressing Enter
+    When User Enters Id
+    And User Enters Password
+    And User Press Enter
+    Then User Should Navigate to next Page

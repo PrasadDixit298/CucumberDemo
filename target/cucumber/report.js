@@ -1,13 +1,19 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Login.feature");
 formatter.feature({
-  "line": 1,
+  "line": 2,
   "name": "Validate Login Functionality",
   "description": "",
   "id": "validate-login-functionality",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@Test"
+    }
+  ]
 });
 formatter.scenarioOutline({
-  "line": 6,
+  "line": 7,
   "name": "To validate Login With Correct Credential",
   "description": "",
   "id": "validate-login-functionality;to-validate-login-with-correct-credential",
@@ -15,22 +21,22 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "User Enter With Correct Credential \"\u003cUsername\u003e\" and \"\u003cPassword\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 8,
+  "line": 9,
   "name": "User Click On Login Button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 10,
   "name": "User Should Navigate to next Page",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 11,
+  "line": 12,
   "name": "",
   "description": "",
   "id": "validate-login-functionality;to-validate-login-with-correct-credential;",
@@ -40,7 +46,7 @@ formatter.examples({
         "Username",
         "Password"
       ],
-      "line": 12,
+      "line": 13,
       "id": "validate-login-functionality;to-validate-login-with-correct-credential;;1"
     },
     {
@@ -48,37 +54,29 @@ formatter.examples({
         "qwerty@asd.com",
         "Qwerty@124!??12e"
       ],
-      "line": 13,
+      "line": 14,
       "id": "validate-login-functionality;to-validate-login-with-correct-credential;;2"
     },
     {
       "cells": [
-        "xyz123456@abc.com",
-        "Qwerty@124!??12e"
-      ],
-      "line": 14,
-      "id": "validate-login-functionality;to-validate-login-with-correct-credential;;3"
-    },
-    {
-      "cells": [
-        "qwerty1234@asd.com",
+        "prasaddixit3@asd.com",
         "Qwerty@124!??12e"
       ],
       "line": 15,
-      "id": "validate-login-functionality;to-validate-login-with-correct-credential;;4"
+      "id": "validate-login-functionality;to-validate-login-with-correct-credential;;3"
     }
   ],
   "keyword": "Examples"
 });
 formatter.background({
-  "line": 3,
+  "line": 4,
   "name": "Validate Login Functionality with Credential",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.step({
-  "line": 4,
+  "line": 5,
   "name": "User Should Be On Home Page",
   "keyword": "Given "
 });
@@ -86,19 +84,26 @@ formatter.match({
   "location": "LoginSteps.user_Should_Be_On_Home_Page()"
 });
 formatter.result({
-  "duration": 20775472600,
-  "status": "passed"
+  "duration": 5770178500,
+  "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 87\nCurrent browser version is 89.0.4389.90 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver\u003d87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}),platform\u003dWindows NT 10.0.19042 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 2.64 seconds\nBuild info: version: \u00272.47.1\u0027, revision: \u0027unknown\u0027, time: \u00272015-07-30 11:02:44\u0027\nSystem info: host: \u0027IVL-LP80\u0027, ip: \u0027192.168.29.98\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:128)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:141)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:170)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:159)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:116)\r\n\tat com.StepDefinations.LoginSteps.user_Should_Be_On_Home_Page(LoginSteps.java:22)\r\n\tat ✽.Given User Should Be On Home Page(Login.feature:5)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
-  "line": 13,
+  "line": 14,
   "name": "To validate Login With Correct Credential",
   "description": "",
   "id": "validate-login-functionality;to-validate-login-with-correct-credential;;2",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@Test"
+    }
+  ]
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "User Enter With Correct Credential \"qwerty@asd.com\" and \"Qwerty@124!??12e\"",
   "matchedColumns": [
     0,
@@ -107,12 +112,12 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 8,
+  "line": 9,
   "name": "User Click On Login Button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 10,
   "name": "User Should Navigate to next Page",
   "keyword": "Then "
 });
@@ -130,32 +135,29 @@ formatter.match({
   "location": "LoginSteps.user_Enter_With_Correct_Credential_and(String,String)"
 });
 formatter.result({
-  "duration": 2571009900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginSteps.user_Click_On_Login_Button()"
 });
 formatter.result({
-  "duration": 7215473000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginSteps.user_Should_Navigate_to_next_Page()"
 });
 formatter.result({
-  "duration": 315573200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
-  "line": 3,
+  "line": 4,
   "name": "Validate Login Functionality with Credential",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.step({
-  "line": 4,
+  "line": 5,
   "name": "User Should Be On Home Page",
   "keyword": "Given "
 });
@@ -163,97 +165,27 @@ formatter.match({
   "location": "LoginSteps.user_Should_Be_On_Home_Page()"
 });
 formatter.result({
-  "duration": 15756857500,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 14,
-  "name": "To validate Login With Correct Credential",
-  "description": "",
-  "id": "validate-login-functionality;to-validate-login-with-correct-credential;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 7,
-  "name": "User Enter With Correct Credential \"xyz123456@abc.com\" and \"Qwerty@124!??12e\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "User Click On Login Button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 9,
-  "name": "User Should Navigate to next Page",
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "xyz123456@abc.com",
-      "offset": 36
-    },
-    {
-      "val": "Qwerty@124!??12e",
-      "offset": 60
-    }
-  ],
-  "location": "LoginSteps.user_Enter_With_Correct_Credential_and(String,String)"
-});
-formatter.result({
-  "duration": 2785763700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSteps.user_Click_On_Login_Button()"
-});
-formatter.result({
-  "duration": 8287181300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSteps.user_Should_Navigate_to_next_Page()"
-});
-formatter.result({
-  "duration": 204717000,
-  "status": "passed"
-});
-formatter.background({
-  "line": 3,
-  "name": "Validate Login Functionality with Credential",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 4,
-  "name": "User Should Be On Home Page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginSteps.user_Should_Be_On_Home_Page()"
-});
-formatter.result({
-  "duration": 17145677400,
-  "status": "passed"
+  "duration": 4053458500,
+  "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 87\nCurrent browser version is 89.0.4389.90 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver\u003d87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}),platform\u003dWindows NT 10.0.19042 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 2.57 seconds\nBuild info: version: \u00272.47.1\u0027, revision: \u0027unknown\u0027, time: \u00272015-07-30 11:02:44\u0027\nSystem info: host: \u0027IVL-LP80\u0027, ip: \u0027192.168.29.98\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:128)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:141)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:170)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:159)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:116)\r\n\tat com.StepDefinations.LoginSteps.user_Should_Be_On_Home_Page(LoginSteps.java:22)\r\n\tat ✽.Given User Should Be On Home Page(Login.feature:5)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "line": 15,
   "name": "To validate Login With Correct Credential",
   "description": "",
-  "id": "validate-login-functionality;to-validate-login-with-correct-credential;;4",
+  "id": "validate-login-functionality;to-validate-login-with-correct-credential;;3",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@Test"
+    }
+  ]
 });
 formatter.step({
-  "line": 7,
-  "name": "User Enter With Correct Credential \"qwerty1234@asd.com\" and \"Qwerty@124!??12e\"",
+  "line": 8,
+  "name": "User Enter With Correct Credential \"prasaddixit3@asd.com\" and \"Qwerty@124!??12e\"",
   "matchedColumns": [
     0,
     1
@@ -261,45 +193,42 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 8,
+  "line": 9,
   "name": "User Click On Login Button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 10,
   "name": "User Should Navigate to next Page",
   "keyword": "Then "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "qwerty1234@asd.com",
+      "val": "prasaddixit3@asd.com",
       "offset": 36
     },
     {
       "val": "Qwerty@124!??12e",
-      "offset": 61
+      "offset": 63
     }
   ],
   "location": "LoginSteps.user_Enter_With_Correct_Credential_and(String,String)"
 });
 formatter.result({
-  "duration": 2848480900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginSteps.user_Click_On_Login_Button()"
 });
 formatter.result({
-  "duration": 10534568600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginSteps.user_Should_Navigate_to_next_Page()"
 });
 formatter.result({
-  "duration": 179669000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenarioOutline({
   "line": 17,
@@ -369,14 +298,14 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.background({
-  "line": 3,
+  "line": 4,
   "name": "Validate Login Functionality with Credential",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.step({
-  "line": 4,
+  "line": 5,
   "name": "User Should Be On Home Page",
   "keyword": "Given "
 });
@@ -384,8 +313,9 @@ formatter.match({
   "location": "LoginSteps.user_Should_Be_On_Home_Page()"
 });
 formatter.result({
-  "duration": 21610845300,
-  "status": "passed"
+  "duration": 4151637800,
+  "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 87\nCurrent browser version is 89.0.4389.90 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver\u003d87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}),platform\u003dWindows NT 10.0.19042 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 2.67 seconds\nBuild info: version: \u00272.47.1\u0027, revision: \u0027unknown\u0027, time: \u00272015-07-30 11:02:44\u0027\nSystem info: host: \u0027IVL-LP80\u0027, ip: \u0027192.168.29.98\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:128)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:141)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:170)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:159)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:116)\r\n\tat com.StepDefinations.LoginSteps.user_Should_Be_On_Home_Page(LoginSteps.java:22)\r\n\tat ✽.Given User Should Be On Home Page(Login.feature:5)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "line": 23,
@@ -393,7 +323,13 @@ formatter.scenario({
   "description": "",
   "id": "validate-login-functionality;to-validate-login-with-incorrect-credential;;2",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@Test"
+    }
+  ]
 });
 formatter.step({
   "line": 18,
@@ -423,25 +359,23 @@ formatter.match({
   "location": "LoginSteps.user_Login_With_invalid_and(String,String)"
 });
 formatter.result({
-  "duration": 10120007400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginSteps.user_Should_Get_Login_Error()"
 });
 formatter.result({
-  "duration": 414246600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
-  "line": 3,
+  "line": 4,
   "name": "Validate Login Functionality with Credential",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.step({
-  "line": 4,
+  "line": 5,
   "name": "User Should Be On Home Page",
   "keyword": "Given "
 });
@@ -449,8 +383,9 @@ formatter.match({
   "location": "LoginSteps.user_Should_Be_On_Home_Page()"
 });
 formatter.result({
-  "duration": 20510258600,
-  "status": "passed"
+  "duration": 3743411100,
+  "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 87\nCurrent browser version is 89.0.4389.90 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver\u003d87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}),platform\u003dWindows NT 10.0.19042 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 2.39 seconds\nBuild info: version: \u00272.47.1\u0027, revision: \u0027unknown\u0027, time: \u00272015-07-30 11:02:44\u0027\nSystem info: host: \u0027IVL-LP80\u0027, ip: \u0027192.168.29.98\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:128)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:141)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:170)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:159)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:116)\r\n\tat com.StepDefinations.LoginSteps.user_Should_Be_On_Home_Page(LoginSteps.java:22)\r\n\tat ✽.Given User Should Be On Home Page(Login.feature:5)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "line": 24,
@@ -458,7 +393,13 @@ formatter.scenario({
   "description": "",
   "id": "validate-login-functionality;to-validate-login-with-incorrect-credential;;3",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@Test"
+    }
+  ]
 });
 formatter.step({
   "line": 18,
@@ -488,25 +429,23 @@ formatter.match({
   "location": "LoginSteps.user_Login_With_invalid_and(String,String)"
 });
 formatter.result({
-  "duration": 15859220100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginSteps.user_Should_Get_Login_Error()"
 });
 formatter.result({
-  "duration": 1297526100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
-  "line": 3,
+  "line": 4,
   "name": "Validate Login Functionality with Credential",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.step({
-  "line": 4,
+  "line": 5,
   "name": "User Should Be On Home Page",
   "keyword": "Given "
 });
@@ -514,8 +453,9 @@ formatter.match({
   "location": "LoginSteps.user_Should_Be_On_Home_Page()"
 });
 formatter.result({
-  "duration": 29645654200,
-  "status": "passed"
+  "duration": 3603073100,
+  "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 87\nCurrent browser version is 89.0.4389.90 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver\u003d87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}),platform\u003dWindows NT 10.0.19042 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 2.06 seconds\nBuild info: version: \u00272.47.1\u0027, revision: \u0027unknown\u0027, time: \u00272015-07-30 11:02:44\u0027\nSystem info: host: \u0027IVL-LP80\u0027, ip: \u0027192.168.29.98\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:128)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:141)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:170)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:159)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:116)\r\n\tat com.StepDefinations.LoginSteps.user_Should_Be_On_Home_Page(LoginSteps.java:22)\r\n\tat ✽.Given User Should Be On Home Page(Login.feature:5)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "line": 25,
@@ -523,7 +463,13 @@ formatter.scenario({
   "description": "",
   "id": "validate-login-functionality;to-validate-login-with-incorrect-credential;;4",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@Test"
+    }
+  ]
 });
 formatter.step({
   "line": 18,
@@ -553,25 +499,23 @@ formatter.match({
   "location": "LoginSteps.user_Login_With_invalid_and(String,String)"
 });
 formatter.result({
-  "duration": 18054973400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginSteps.user_Should_Get_Login_Error()"
 });
 formatter.result({
-  "duration": 1112688700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
-  "line": 3,
+  "line": 4,
   "name": "Validate Login Functionality with Credential",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.step({
-  "line": 4,
+  "line": 5,
   "name": "User Should Be On Home Page",
   "keyword": "Given "
 });
@@ -579,8 +523,9 @@ formatter.match({
   "location": "LoginSteps.user_Should_Be_On_Home_Page()"
 });
 formatter.result({
-  "duration": 40224705300,
-  "status": "passed"
+  "duration": 3943338200,
+  "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 87\nCurrent browser version is 89.0.4389.90 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver\u003d87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}),platform\u003dWindows NT 10.0.19042 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 2.59 seconds\nBuild info: version: \u00272.47.1\u0027, revision: \u0027unknown\u0027, time: \u00272015-07-30 11:02:44\u0027\nSystem info: host: \u0027IVL-LP80\u0027, ip: \u0027192.168.29.98\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:128)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:141)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:170)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:159)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:116)\r\n\tat com.StepDefinations.LoginSteps.user_Should_Be_On_Home_Page(LoginSteps.java:22)\r\n\tat ✽.Given User Should Be On Home Page(Login.feature:5)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "line": 26,
@@ -588,7 +533,13 @@ formatter.scenario({
   "description": "",
   "id": "validate-login-functionality;to-validate-login-with-incorrect-credential;;5",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@Test"
+    }
+  ]
 });
 formatter.step({
   "line": 18,
@@ -618,273 +569,125 @@ formatter.match({
   "location": "LoginSteps.user_Login_With_invalid_and(String,String)"
 });
 formatter.result({
-  "duration": 16847328800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginSteps.user_Should_Get_Login_Error()"
 });
 formatter.result({
-  "duration": 344932700,
-  "status": "passed"
-});
-formatter.uri("Registration.feature");
-formatter.feature({
-  "line": 1,
-  "name": "Validate Registration Functionality",
-  "description": "",
-  "id": "validate-registration-functionality",
-  "keyword": "Feature"
-});
-formatter.scenarioOutline({
-  "line": 6,
-  "name": "To validate Registration With Correct Credential",
-  "description": "",
-  "id": "validate-registration-functionality;to-validate-registration-with-correct-credential",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 7,
-  "name": "User Enter input  \"\u003cEmail\u003e\" and \"\u003cPassword\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "User Click On Registration",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 9,
-  "name": "User Should  Be on Dashboard",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 11,
-  "name": "",
-  "description": "",
-  "id": "validate-registration-functionality;to-validate-registration-with-correct-credential;",
-  "rows": [
-    {
-      "cells": [
-        "Email",
-        "Password"
-      ],
-      "line": 12,
-      "id": "validate-registration-functionality;to-validate-registration-with-correct-credential;;1"
-    },
-    {
-      "cells": [
-        "qwerty123455556@asd.com",
-        "Qwerty@124!??12e"
-      ],
-      "line": 13,
-      "id": "validate-registration-functionality;to-validate-registration-with-correct-credential;;2"
-    },
-    {
-      "cells": [
-        "jkAbcdef112212223456@abc.com",
-        "Qwerty@124!??12e"
-      ],
-      "line": 14,
-      "id": "validate-registration-functionality;to-validate-registration-with-correct-credential;;3"
-    }
-  ],
-  "keyword": "Examples"
+  "status": "skipped"
 });
 formatter.background({
-  "line": 3,
-  "name": "To Validate  Registration Functionality",
+  "line": 4,
+  "name": "Validate Login Functionality with Credential",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.step({
-  "line": 4,
-  "name": "User Should Be On Application Home",
+  "line": 5,
+  "name": "User Should Be On Home Page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "Registrationstep.user_Should_Be_On_Application_Home()"
+  "location": "LoginSteps.user_Should_Be_On_Home_Page()"
 });
 formatter.result({
-  "duration": 23728148800,
-  "status": "passed"
+  "duration": 3448881300,
+  "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 87\nCurrent browser version is 89.0.4389.90 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver\u003d87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}),platform\u003dWindows NT 10.0.19042 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 2.04 seconds\nBuild info: version: \u00272.47.1\u0027, revision: \u0027unknown\u0027, time: \u00272015-07-30 11:02:44\u0027\nSystem info: host: \u0027IVL-LP80\u0027, ip: \u0027192.168.29.98\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:128)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:141)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:170)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:159)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:116)\r\n\tat com.StepDefinations.LoginSteps.user_Should_Be_On_Home_Page(LoginSteps.java:22)\r\n\tat ✽.Given User Should Be On Home Page(Login.feature:5)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
-  "line": 13,
-  "name": "To validate Registration With Correct Credential",
+  "line": 28,
+  "name": "Validate Login Functionality By Pressing Enter",
   "description": "",
-  "id": "validate-registration-functionality;to-validate-registration-with-correct-credential;;2",
+  "id": "validate-login-functionality;validate-login-functionality-by-pressing-enter",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 7,
-  "name": "User Enter input  \"qwerty123455556@asd.com\" and \"Qwerty@124!??12e\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
+  "line": 29,
+  "name": "User Enters Id",
   "keyword": "When "
 });
 formatter.step({
-  "line": 8,
-  "name": "User Click On Registration",
+  "line": 30,
+  "name": "User Enters Password",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
-  "name": "User Should  Be on Dashboard",
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "qwerty123455556@asd.com",
-      "offset": 19
-    },
-    {
-      "val": "Qwerty@124!??12e",
-      "offset": 49
-    }
-  ],
-  "location": "Registrationstep.user_Enter_input_and(String,String)"
-});
-formatter.result({
-  "duration": 8647300400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Registrationstep.user_Click_On_Registration()"
-});
-formatter.result({
-  "duration": 14331967800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Registrationstep.user_Should_Be_on_Dashboard()"
-});
-formatter.result({
-  "duration": 38867300,
-  "status": "passed"
-});
-formatter.background({
-  "line": 3,
-  "name": "To Validate  Registration Functionality",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 4,
-  "name": "User Should Be On Application Home",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "Registrationstep.user_Should_Be_On_Application_Home()"
-});
-formatter.result({
-  "duration": 26779125900,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 14,
-  "name": "To validate Registration With Correct Credential",
-  "description": "",
-  "id": "validate-registration-functionality;to-validate-registration-with-correct-credential;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 7,
-  "name": "User Enter input  \"jkAbcdef112212223456@abc.com\" and \"Qwerty@124!??12e\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "User Click On Registration",
+  "line": 31,
+  "name": "User Press Enter",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
-  "name": "User Should  Be on Dashboard",
+  "line": 32,
+  "name": "User Should Navigate to next Page",
   "keyword": "Then "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "jkAbcdef112212223456@abc.com",
-      "offset": 19
-    },
-    {
-      "val": "Qwerty@124!??12e",
-      "offset": 54
-    }
-  ],
-  "location": "Registrationstep.user_Enter_input_and(String,String)"
+  "location": "LoginSteps.user_Enters_Id()"
 });
 formatter.result({
-  "duration": 29352136200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "Registrationstep.user_Click_On_Registration()"
+  "location": "LoginSteps.user_Enters_Password()"
 });
 formatter.result({
-  "duration": 17532842700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "Registrationstep.user_Should_Be_on_Dashboard()"
+  "location": "LoginSteps.user_Press_Enter()"
 });
 formatter.result({
-  "duration": 1117863500,
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.match({
+  "location": "LoginSteps.user_Should_Navigate_to_next_Page()"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.uri("Shop.feature");
 formatter.feature({
-  "line": 1,
+  "line": 2,
   "name": "Validate Shop Feature",
   "description": "",
   "id": "validate-shop-feature",
-  "keyword": "Feature"
-});
-formatter.scenario({
-  "line": 3,
-  "name": "Login To Application",
-  "description": "",
-  "id": "validate-shop-feature;login-to-application",
-  "type": "scenario",
-  "keyword": "Scenario",
+  "keyword": "Feature",
   "tags": [
     {
-      "line": 2,
+      "line": 1,
       "name": "@Test"
     }
   ]
 });
-formatter.step({
+formatter.scenario({
   "line": 4,
+  "name": "Login To Application",
+  "description": "",
+  "id": "validate-shop-feature;login-to-application",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 5,
   "name": "User open Application",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 5,
+  "line": 6,
   "name": "User Login Application",
   "keyword": "When "
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "Click On  Shop",
   "keyword": "And "
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "User Should be on shopping page",
   "keyword": "Then "
 });
@@ -892,29 +695,27 @@ formatter.match({
   "location": "ShoppingSteps.user_open_Application()"
 });
 formatter.result({
-  "duration": 23017241800,
-  "status": "passed"
+  "duration": 3896611800,
+  "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 87\nCurrent browser version is 89.0.4389.90 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\n  (Driver info: chromedriver\u003d87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}),platform\u003dWindows NT 10.0.19042 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 2.48 seconds\nBuild info: version: \u00272.47.1\u0027, revision: \u0027unknown\u0027, time: \u00272015-07-30 11:02:44\u0027\nSystem info: host: \u0027IVL-LP80\u0027, ip: \u0027192.168.29.98\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:128)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:141)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:170)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:159)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:116)\r\n\tat com.StepDefinations.ShoppingSteps.user_open_Application(ShoppingSteps.java:19)\r\n\tat ✽.Given User open Application(Shop.feature:5)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "ShoppingSteps.user_Login_Application()"
 });
 formatter.result({
-  "duration": 58010416800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ShoppingSteps.click_On_Shop()"
 });
 formatter.result({
-  "duration": 16250970300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ShoppingSteps.user_Should_be_on_shopping_page()"
 });
 formatter.result({
-  "duration": 355146800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenarioOutline({
   "line": 10,
@@ -922,13 +723,7 @@ formatter.scenarioOutline({
   "description": "",
   "id": "validate-shop-feature;valid-shoping-functionality",
   "type": "scenario_outline",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 9,
-      "name": "@Test"
-    }
-  ]
+  "keyword": "Scenario Outline"
 });
 formatter.step({
   "line": 11,
@@ -1007,7 +802,7 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 9,
+      "line": 1,
       "name": "@Test"
     }
   ]
@@ -1059,36 +854,33 @@ formatter.match({
   "location": "ShoppingSteps.user_Select_Book_and_click_on_Add_to_Basket()"
 });
 formatter.result({
-  "duration": 1481131400,
-  "status": "passed"
+  "duration": 7193100,
+  "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)\" because \"com.StepDefinations.ShoppingSteps.driver\" is null\r\n\tat com.StepDefinations.ShoppingSteps.user_Select_Book_and_click_on_Add_to_Basket(ShoppingSteps.java:46)\r\n\tat ✽.When User Select Book and click on Add to Basket(Shop.feature:11)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "ShoppingSteps.click_On_View_Basket()"
 });
 formatter.result({
-  "duration": 18414655700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ShoppingSteps.user_Shoulb_be_Cart_Page()"
 });
 formatter.result({
-  "duration": 318894400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ShoppingSteps.user_click_On_Proceed()"
 });
 formatter.result({
-  "duration": 7873308200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ShoppingSteps.user_Should_be_On_Payment_Page()"
 });
 formatter.result({
-  "duration": 96409700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1120,9 +912,7 @@ formatter.match({
   "location": "ShoppingSteps.user_Enter_Details_and_and_and_and_and(String,String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 7603081200,
-  "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d88.0.4324.190)\n  (Driver info: chromedriver\u003d87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}),platform\u003dWindows NT 10.0.19042 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 253 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00272.47.1\u0027, revision: \u0027unknown\u0027, time: \u00272015-07-30 11:02:44\u0027\nSystem info: host: \u0027IVL-LP80\u0027, ip: \u0027192.168.29.98\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:63381}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003dignore, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir\u003dC:\\Users\\PRASAD~1.DIX\\AppData\\Local\\Temp\\scoped_dir30496_827240805}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, strictFileInteractability\u003dfalse, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d88.0.4324.190, browserConnectionEnabled\u003dfalse, proxy\u003d{}, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 526a9c67ad0aede28085b70851cd68e9\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:273)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat com.StepDefinations.ShoppingSteps.user_Enter_Details_and_and_and_and_and(ShoppingSteps.java:85)\r\n\tat ✽.And User Enter Details \"abcdef\" and \"rock\" and \"0132456789\" and\"abc\" and \"Nagpur\" and\"440022\"(Shop.feature:16)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ShoppingSteps.user_select_Payment_and_click_on_Pay()"

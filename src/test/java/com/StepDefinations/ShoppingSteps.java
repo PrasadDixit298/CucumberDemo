@@ -101,7 +101,6 @@ public class ShoppingSteps {
 	  public void user_select_Payment_and_click_on_Pay() throws Throwable {
 	 driver.findElement(By.id("place_order")).click();
 	 System.out.println(driver.getTitle());
-	 Thread.sleep(8000);
-	 driver.close();
+	
 	  }
 }

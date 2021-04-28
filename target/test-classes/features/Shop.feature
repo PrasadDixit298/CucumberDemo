@@ -1,7 +1,7 @@
-@Test
+@Test1
 Feature: Validate Shop Feature
 
-  Scenario: Login To Application
+  Background: Login To Application
     Given User open Application
     When User Login Application
     And Click On  Shop
@@ -18,4 +18,4 @@ Feature: Validate Shop Feature
 
     Examples: 
       | Name   | Surname | Phone      | Address | City   | Zip    |
-      | abcdef | rock    | 0132456789 | abc     | Nagpur | 440022 |
+      | pratik | zambre  | 0132456789 | abc     | Nagpur | 440022 |

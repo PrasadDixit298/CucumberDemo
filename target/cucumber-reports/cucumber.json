@@ -1,0 +1,209 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Login To Application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 33401628100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User open Application",
+            "match": {
+              "location": "ShoppingSteps.user_open_Application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6030456800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Login Application",
+            "match": {
+              "location": "ShoppingSteps.user_Login_Application()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7841733700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click On  Shop",
+            "match": {
+              "location": "ShoppingSteps.click_On_Shop()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 215767700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User Should be on shopping page",
+            "match": {
+              "location": "ShoppingSteps.user_Should_be_on_shopping_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Valid Shoping functionality",
+        "description": "",
+        "id": "validate-shop-feature;valid-shoping-functionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 734847400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User Select Book and click on Add to Basket",
+            "match": {
+              "location": "ShoppingSteps.user_Select_Book_and_click_on_Add_to_Basket()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7990713500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click On View Basket",
+            "match": {
+              "location": "ShoppingSteps.click_On_View_Basket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11637900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User Shoulb be Cart Page",
+            "match": {
+              "location": "ShoppingSteps.user_Shoulb_be_Cart_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2604070300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click On Proceed",
+            "match": {
+              "location": "ShoppingSteps.user_click_On_Proceed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11696600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User Should be On Payment Page",
+            "match": {
+              "location": "ShoppingSteps.user_Should_be_On_Payment_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2170847200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User Enter Details \"pratik\" and \"zambre\" and \"0132456789\" and\"abc\" and \"Nagpur\" and\"440022\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pratik",
+                  "offset": 20
+                },
+                {
+                  "val": "zambre",
+                  "offset": 33
+                },
+                {
+                  "val": "0132456789",
+                  "offset": 46
+                },
+                {
+                  "val": "abc",
+                  "offset": 62
+                },
+                {
+                  "val": "Nagpur",
+                  "offset": 72
+                },
+                {
+                  "val": "440022",
+                  "offset": 84
+                }
+              ],
+              "location": "ShoppingSteps.user_Enter_Details_and_and_and_and_and(String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 199403300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User select Payment and click on Pay",
+            "match": {
+              "location": "ShoppingSteps.user_select_Payment_and_click_on_Pay()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Test1"
+          }
+        ]
+      }
+    ],
+    "name": "Validate Shop Feature",
+    "description": "",
+    "id": "validate-shop-feature",
+    "keyword": "Feature",
+    "uri": "Shop.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Test1"
+      }
+    ]
+  }
+]

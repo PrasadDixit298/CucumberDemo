@@ -1,0 +1,4 @@
+com\StepDefinations\LoginSteps.class
+com\StepDefinations\ShoppingSteps.class
+com\TestRunner\LoginRunner.class
+com\StepDefinations\Registrationstep.class
